@@ -18,5 +18,18 @@
     <ClCompile Include="Algorythms_repeat_project.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="growfunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="janes_leads_20.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="growfunction.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
