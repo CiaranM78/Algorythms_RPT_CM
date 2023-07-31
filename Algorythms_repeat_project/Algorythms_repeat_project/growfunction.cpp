@@ -5,10 +5,11 @@
 growsize::growsize()
 {
 
-	//(*this).telephone = "Mirabelle";//
+	
 	this->firstname = "Mirabelle";
 		this->lastname = "O'Mullaney";
 	this->company = "Beier LLC";
+	this->telephone = "(464) 5709099";
 
 }
 

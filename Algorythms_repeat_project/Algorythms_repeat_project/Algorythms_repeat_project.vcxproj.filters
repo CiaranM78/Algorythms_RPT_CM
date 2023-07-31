@@ -21,6 +21,9 @@
     <ClCompile Include="growfunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="linkedlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="janes_leads_20.txt">
@@ -30,6 +33,15 @@
   <ItemGroup>
     <ClInclude Include="growfunction.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="linklist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="listiterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="listnode.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

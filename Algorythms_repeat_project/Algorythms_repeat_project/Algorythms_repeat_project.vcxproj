@@ -141,12 +141,16 @@
   <ItemGroup>
     <ClCompile Include="Algorythms_repeat_project.cpp" />
     <ClCompile Include="growfunction.cpp" />
+    <ClCompile Include="linkedlist.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="janes_leads_20.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="growfunction.h" />
+    <ClInclude Include="linklist.h" />
+    <ClInclude Include="listiterator.h" />
+    <ClInclude Include="listnode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
