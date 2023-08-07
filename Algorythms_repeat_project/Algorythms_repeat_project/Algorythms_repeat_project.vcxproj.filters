@@ -21,7 +21,7 @@
     <ClCompile Include="growfunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="linkedlist.cpp">
+    <ClCompile Include="stackedarray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -34,13 +34,7 @@
     <ClInclude Include="growfunction.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="linklist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="listiterator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="listnode.h">
+    <ClInclude Include="Stackedarray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
