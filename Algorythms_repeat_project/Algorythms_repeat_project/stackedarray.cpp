@@ -7,36 +7,111 @@
 using namespace std;
 
 
-void display(growsize& grow)
+/*void display(growsize& grow)
 {
 	cout << grow.to_string() << endl;
 }
 
 struct leads
 {
-	string firstname;
-	string lastname;
-	string company;
-	string telephone;
+	std::string firstname;
+	std::string lastname;
+	std::string company;
+	std::string telephone;
 
 };
 
-void scaninfo()
+*/
+
+void scaninfojane20()
 {
+	std::ifstream readinfo;
+	readinfo.open("C:/Users/Ciaran/Documents/algorythm repository/Algorythms_repeat_ciaran_murtagh/Algorythms_repeat_project/Algorythms_repeat_project/janes_leads_20.csv");
 
-	ifstream info("jane_leads_20.txt");
-	bool field = true;
+	if (!readinfo.is_open()) {
+		cout << "cant read file." << endl;
 
-	if (info)
-	{
+	}
+
+	std::string line;
+	while (getline(readinfo, line)) {
+		cout << line << endl;
+	}
+
+	readinfo.close();
 
 
 
 
 
 
+}
 
-	};
+void scaninfojane250()
+{
+	std::ifstream readinfo;
+	readinfo.open("C:/Users/Ciaran/Documents/algorythm repository/Algorythms_repeat_ciaran_murtagh/Algorythms_repeat_project/Algorythms_repeat_project/janes_leads_250.csv");
+
+	if (!readinfo.is_open()) {
+		cout << "cant read file." << endl;
+
+	}
+
+	std::string line;
+	while (getline(readinfo, line)) {
+		cout << line << endl;
+	}
+
+	readinfo.close();
+
+
+
+
+
+
+}
+
+void scaninfojohn20()
+{
+	std::ifstream readinfo;
+	readinfo.open("C:/Users/Ciaran/Documents/algorythm repository/Algorythms_repeat_ciaran_murtagh/Algorythms_repeat_project/Algorythms_repeat_project/johns_leads_20.csv");
+
+	if (!readinfo.is_open()) {
+		cout << "cant read file." << endl;
+
+	}
+
+	std::string line;
+	while (getline(readinfo, line)) {
+		cout << line << endl;
+	}
+
+	readinfo.close();
+
+
+
+
+
+
+}
+
+void scaninfojohn250()
+{
+	std::ifstream readinfo;
+	readinfo.open("C:/Users/Ciaran/Documents/algorythm repository/Algorythms_repeat_ciaran_murtagh/Algorythms_repeat_project/Algorythms_repeat_project/johns_leads_250.csv");
+
+	if (!readinfo.is_open()) {
+		cout << "cant read file." << endl;
+
+	}
+
+	std::string line;
+	while (getline(readinfo, line)) {
+		cout << line << endl;
+	}
+
+	readinfo.close();
+
 
 
 
@@ -45,23 +120,15 @@ void scaninfo()
 }
 
 
-
-
-
-
-
-
-
 int main(){
 
-	arraystack <string> stack;
+	scaninfojane20();
 
-	string datainfo;
-
+	//scaninfojane250();
 	
+	//scaninfojohn20();
 
-
-
+	//scaninfojohn250();
 
 
 
@@ -82,7 +149,7 @@ int main(){
 						stack.push(datainfo);
 
 
-				} while (datainfo != "stop");
+				} while ( topP != space);
 
 						while (stack.count() != 0)
 						{

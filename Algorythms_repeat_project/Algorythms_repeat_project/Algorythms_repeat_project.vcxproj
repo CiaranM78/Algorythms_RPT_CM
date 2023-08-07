@@ -150,6 +150,12 @@
     <ClInclude Include="growfunction.h" />
     <ClInclude Include="Stackedarray.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="janes_leads_20.csv" />
+    <None Include="janes_leads_250.csv" />
+    <None Include="johns_leads_20.csv" />
+    <None Include="johns_leads_250.csv" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
