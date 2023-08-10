@@ -1,5 +1,6 @@
 #pragma once
 
+
 using namespace std;
 
 template <class t>
@@ -17,6 +18,8 @@ public:
 	t top();
 	void pop();
 	int count();
+	//void print();
+	bool isEmpty();
 	~arraystack();
 
 
@@ -31,6 +34,20 @@ arraystack <t> ::arraystack(int size)
 	topP = 0;
 
 }
+
+//template <class T>
+//void arraystack<T>::print()
+//{
+//	for (int i = 0; i < topP; i++)
+//	{
+//		if (i != 0)
+//		{
+//			cout << ", ";
+//		}
+//		cout << data[i];
+//	}
+//	cout << endl;
+//}
 
 template <class t>
 void arraystack <t> :: push(t item)
@@ -75,6 +92,21 @@ int arraystack <t> ::count() {
 
 	return topP;
 
+}
+
+template <class T>
+bool arraystack<T>::isEmpty()
+{
+	if (topP == 0) {
+
+	
+	}
+
+	if (topP != 0) {
+
+		cout << "data presant";
+
+	}
 }
 
 template <class t>
