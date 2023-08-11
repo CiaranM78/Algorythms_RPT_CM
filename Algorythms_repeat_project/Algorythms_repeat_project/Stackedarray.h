@@ -11,16 +11,20 @@ class arraystack
 	t* data;
 	int topP;
 	int space;
+	//int index;
 
 public:
+
+
+
 		arraystack(int size = 21);
 	void push(t item);
-	t top();
-	void pop();
-	int count();
-	//void print();
-	bool isEmpty();
+	t getElement(int index);
+	int length();
 	~arraystack();
+	bool remove();
+	int search(const t& target);
+	
 
 
 };
@@ -32,26 +36,23 @@ arraystack <t> ::arraystack(int size)
 	data = new t[size];
 	space = size;
 	topP = 0;
-
+	//index = 0;
 }
 
-//template <class T>
-//void arraystack<T>::print()
-//{
-//	for (int i = 0; i < topP; i++)
-//	{
-//		if (i != 0)
-//		{
-//			cout << ", ";
-//		}
-//		cout << data[i];
-//	}
-//	cout << endl;
-//}
+template <class t>
+arraystack <t> :: ~arraystack()
+{
+	delete[] data;
+	data = nullptr;
+}
+
 
 template <class t>
 void arraystack <t> :: push(t item)
 {
+
+	// if top posistion value is the same a space value return nothing
+
 	if (topP == space)
 	{
 		return ;
@@ -60,58 +61,61 @@ void arraystack <t> :: push(t item)
 	else {
 		data[topP] = item; 
 		topP++;
+
 	}
 }
 
-template <class t>
-t arraystack <t> ::top()
-{
 
-	if (topP > 0)
-	{
-		return data[topP - 1];
-	}
-	return 0;
 
-}
 
 template <class t>
-void arraystack <t> ::pop()
-{
+int arraystack <t> ::length() {
 
-	if (topP > 0)
-	{
-		topP--;
-	}
-		
-
-}
-
-template <class t>
-int arraystack <t> ::count() {
+// returns top posistion
 
 	return topP;
 
 }
 
-template <class T>
-bool arraystack<T>::isEmpty()
-{
-	if (topP == 0) {
 
-	
+
+template <class t>
+t arraystack <t> ::getElement( int index) {
+
+// if the index value is greater then or equals to zero and the index value is still less then the top posistion return what index is
+
+	if (index >= 0 && index < topP) {
+
+		return index;
 	}
 
-	if (topP != 0) {
 
-		cout << "data presant";
 
-	}
 }
 
 template <class t>
-arraystack <t> :: ~arraystack()
-{
-	delete[] data;
-	data = nullptr;
- }
+bool arraystack <t> ::remove() {
+
+	delete[] this->data;
+	this->space = 0;
+
+
+
+}
+
+template <class t>
+int arraystack <t> ::search(const t& target) {
+
+
+// for each iteration of the loop if i equals the target return what i is.
+
+	for (int i = 0; i < topP; ++i) {
+		if (data[i] == target) {
+			return i;
+		}
+	
+	}
+
+	return -1;
+
+}

@@ -1,3 +1,2 @@
 ﻿  stackedarray.cpp
-C:\Users\Ciaran\Documents\algorythm repository\Algorythms_repeat_ciaran_murtagh\Algorythms_repeat_project\Algorythms_repeat_project\Stackedarray.h(107,3): error C2065: 'cout': undeclared identifier
-C:\Users\Ciaran\Documents\algorythm repository\Algorythms_repeat_ciaran_murtagh\Algorythms_repeat_project\Algorythms_repeat_project\Stackedarray.h(107,3): error C3861: 'cout': identifier not found
+  Algorythms_repeat_project.vcxproj -> C:\Users\Ciaran\Documents\algorythm repository\Algorythms_repeat_ciaran_murtagh\Algorythms_repeat_project\Debug\Algorythms_repeat_project.exe
