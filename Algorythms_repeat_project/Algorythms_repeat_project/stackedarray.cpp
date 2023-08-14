@@ -1,10 +1,8 @@
 #include "Stackedarray.h"
-
+#include "Q3CSV.h"
 
 #include <iostream>
 #include <string>
-#include <fstream>
-#include <sstream>
 
 
 
@@ -32,6 +30,7 @@ using namespace std;
 int main() {
 
 	arraystack<int> stackinfo;
+	
 
 
 
@@ -42,6 +41,7 @@ int main() {
 
 	int secondindex;
 	int secondelement;
+	int clearfunction;
 
 	 secondindex = stackinfo.search(10);
 	 cout << secondindex << endl;
@@ -54,6 +54,15 @@ int main() {
 	cout << "there is " << amount << "values in this array" << endl;
 
 
+	/* stackinfo.remove(15);
+	cout << "data cleared current amount is" << amount << endl;*/
+
+	stackinfo.~arraystack();
+
+	cout << "data cleared current amount is" << amount << endl;
+
+
+	scaninfojohn20();
 
 
 }

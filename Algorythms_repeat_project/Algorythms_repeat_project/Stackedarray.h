@@ -22,7 +22,7 @@ public:
 	t getElement(int index);
 	int length();
 	~arraystack();
-	bool remove();
+	/*bool remove(int index);*/
 	int search(const t& target);
 	
 
@@ -41,9 +41,16 @@ arraystack <t> ::arraystack(int size)
 
 template <class t>
 arraystack <t> :: ~arraystack()
+
 {
-	delete[] data;
-	data = nullptr;
+	if (data != nullptr) {
+
+		delete[] data;
+		data = nullptr;
+		space = 0;
+	}
+
+
 }
 
 
@@ -92,16 +99,22 @@ t arraystack <t> ::getElement( int index) {
 
 
 }
-
-template <class t>
-bool arraystack <t> ::remove() {
-
-	delete[] this->data;
-	this->space = 0;
-
-
-
-}
+//
+//template <class t>
+//bool arraystack <t> ::remove(int index) {
+//
+//	if (index < [0]) {
+//
+//		return false;
+//	}
+//
+//	else {
+//		delete target data;
+//		space--;
+//	}
+//
+//
+//}
 
 template <class t>
 int arraystack <t> ::search(const t& target) {
@@ -113,9 +126,11 @@ int arraystack <t> ::search(const t& target) {
 		if (data[i] == target) {
 			return i;
 		}
+
 	
 	}
 
 	return -1;
 
 }
+

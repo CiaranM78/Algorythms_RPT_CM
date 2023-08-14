@@ -1,2 +1,6 @@
-﻿  stackedarray.cpp
+﻿  Algorythms_repeat_project.cpp
+  stackedarray.cpp
+C:\Users\Ciaran\Documents\algorythm repository\Algorythms_repeat_ciaran_murtagh\Algorythms_repeat_project\Algorythms_repeat_project\stackedarray.cpp(44,6): warning C4101: 'clearfunction': unreferenced local variable
+  Generating Code...
+C:\Users\Ciaran\Documents\algorythm repository\Algorythms_repeat_ciaran_murtagh\Algorythms_repeat_project\Algorythms_repeat_project\Stackedarray.h(101): warning C4715: 'arraystack<int>::getElement': not all control paths return a value
   Algorythms_repeat_project.vcxproj -> C:\Users\Ciaran\Documents\algorythm repository\Algorythms_repeat_ciaran_murtagh\Algorythms_repeat_project\Debug\Algorythms_repeat_project.exe

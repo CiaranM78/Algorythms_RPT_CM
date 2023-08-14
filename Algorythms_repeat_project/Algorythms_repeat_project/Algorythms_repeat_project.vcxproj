@@ -141,7 +141,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Algorythms_repeat_project.cpp" />
-    <ClCompile Include="growfunction.cpp" />
     <ClCompile Include="stackedarray.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="growfunction.h" />
+    <ClInclude Include="Q3CSV.h" />
     <ClInclude Include="Stackedarray.h" />
   </ItemGroup>
   <ItemGroup>

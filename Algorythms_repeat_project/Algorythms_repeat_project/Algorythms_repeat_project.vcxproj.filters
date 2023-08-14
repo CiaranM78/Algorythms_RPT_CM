@@ -13,15 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\infofiles">
-      <UniqueIdentifier>{af405c91-12c9-482f-8682-d09a43cdca35}</UniqueIdentifier>
+    <Filter Include="infofiles">
+      <UniqueIdentifier>{e1ca2a8e-141b-448b-a522-919bb750da0d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Algorythms_repeat_project.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="growfunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stackedarray.cpp">
@@ -35,24 +32,27 @@
     <ClInclude Include="growfunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Q3CSV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="janes_leads_20.csv">
+      <Filter>infofiles</Filter>
+    </None>
+    <None Include="janes_leads_250.csv">
+      <Filter>infofiles</Filter>
+    </None>
+    <None Include="johns_leads_20.csv">
+      <Filter>infofiles</Filter>
+    </None>
+    <None Include="johns_leads_250.csv">
+      <Filter>infofiles</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="janes_leads_20.txt">
-      <Filter>Header Files\infofiles</Filter>
+      <Filter>infofiles</Filter>
     </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="janes_leads_250.csv">
-      <Filter>Header Files\infofiles</Filter>
-    </None>
-    <None Include="janes_leads_20.csv">
-      <Filter>Header Files\infofiles</Filter>
-    </None>
-    <None Include="johns_leads_20.csv">
-      <Filter>Header Files\infofiles</Filter>
-    </None>
-    <None Include="johns_leads_250.csv">
-      <Filter>Header Files\infofiles</Filter>
-    </None>
   </ItemGroup>
 </Project>
