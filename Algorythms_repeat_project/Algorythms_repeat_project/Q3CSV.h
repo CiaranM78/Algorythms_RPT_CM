@@ -17,15 +17,16 @@ void scaninfojohn20()
 
 	arraystack<string> info;
 	ifstream johnleads, janeleads;
-	fstream common, unique;
+	fstream uniquejane, uniquejohn, common;
 	johnleads.open("C:/Users/Ciaran/Documents/algorythm repository/Algorythms_repeat_ciaran_murtagh/Algorythms_repeat_project/Algorythms_repeat_project/johns_leads_20.csv");
 	janeleads.open("C:/Users/Ciaran/Documents/algorythm repository/Algorythms_repeat_ciaran_murtagh/Algorythms_repeat_project/Algorythms_repeat_project/janes_leads_20.csv");
+	uniquejane.open("uniquejane.csv", ios:: out);
+	uniquejohn.open("uniquejohn.csv", ios::out);
 	common.open("common.csv", ios:: out);
-	unique.open("unique.csv", ios:: out);
 
 	
 
-	cout << "'''''''''''''''''''''''''''''''''''''''''''" << endl;
+	//cout << "'''''''''''''''''''''''''''''''''''''''''''" << endl;
 
 			string line;
 			while (getline(johnleads, line)) {
@@ -46,7 +47,7 @@ void scaninfojohn20()
 				getline(johnData, telephone1);
 
 				//cout << firstname1 << lastname1 << company1 << telephone1 << "JOHNLEADS" << endl;
-				cout << "'''''''''''''''''''''''''''''''''''''''''''" << endl;
+				//cout << "'''''''''''''''''''''''''''''''''''''''''''" << endl;
 
 
 				string firstname2;
@@ -64,37 +65,54 @@ void scaninfojohn20()
 				getline(janeData, company2, ',');
 				getline(janeData, telephone2);
 
+
 				//cout << firstname2 << lastname2 << company2 << telephone2 << "JANELEADS" << endl;
 
 
 				//if telephone numbers are equal creates csv and puts common data into it.
 				//then if its not equal it creates another csv puts the other data into that one. 
 
-				if (telephone1.compare( telephone2)) {
 
-					
+				int telecompare = telephone1.compare(telephone2);
 
-						cout << firstname1 << lastname1 << telephone1 << endl;
 
-					unique << firstname1 << lastname1 << telephone1 << endl;
 
-				}
-				else {
+				if (telecompare == 0) {
+
 
 					cout << firstname1 << lastname1 << telephone1 << endl;
 
-					common << firstname1 << lastname1 << telephone1 << endl;
+
+					common << firstname1 << "," << lastname1 << "," << company1 << "," << telephone1 << endl;
+
+				}
+
+				else if (telecompare < 0) {
+
+					//cout << firstname1 << lastname1 << telephone1 << endl;
+
+					uniquejohn << firstname1 << lastname1 << telephone1 << endl;
+
+					uniquejane << firstname2 << lastname2 << telephone2 << endl;
 
 
 				}
 
-				
+				else {
+					uniquejohn << firstname1 << lastname1 << telephone1 << endl;
 
+					uniquejane << firstname2 << lastname2 << telephone2 << endl;
 
+				}
 			}
-			unique.close();
+
+
+			
+			common.close();
 		johnleads.close();
 		janeleads.close();
+		uniquejohn.close();
+		uniquejane.close();
 
 		}
 

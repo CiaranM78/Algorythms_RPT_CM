@@ -140,14 +140,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Algorythms_repeat_project.cpp" />
     <ClCompile Include="stackedarray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="janes_leads_20.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="growfunction.h" />
+    <ClInclude Include="Q2Myset.h" />
     <ClInclude Include="Q3CSV.h" />
     <ClInclude Include="Stackedarray.h" />
   </ItemGroup>

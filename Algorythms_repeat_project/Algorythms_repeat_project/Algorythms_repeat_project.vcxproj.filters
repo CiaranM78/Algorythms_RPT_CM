@@ -18,9 +18,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Algorythms_repeat_project.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="stackedarray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -29,7 +26,7 @@
     <ClInclude Include="Stackedarray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="growfunction.h">
+    <ClInclude Include="Q2Myset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Q3CSV.h">

@@ -15,19 +15,22 @@ class arraystack
 
 public:
 
-
+	//defined the templates so they can be used in the .cpp
 
 		arraystack(int size = 21);
 	void push(t item);
+	void pop();
 	t getElement(int index);
 	int length();
 	~arraystack();
-	/*bool remove(int index);*/
+	bool remove(int index);
 	int search(const t& target);
 	
 
 
 };
+
+
 
 template <class t>
 arraystack <t> ::arraystack(int size)
@@ -39,17 +42,15 @@ arraystack <t> ::arraystack(int size)
 	//index = 0;
 }
 
+//removes all data from the array
+
 template <class t>
 arraystack <t> :: ~arraystack()
 
 {
-	if (data != nullptr) {
 
 		delete[] data;
 		data = nullptr;
-		space = 0;
-	}
-
 
 }
 
@@ -72,6 +73,19 @@ void arraystack <t> :: push(t item)
 	}
 }
 
+
+//pops out value out of array
+
+template <class t>
+void arraystack <t> :: pop()
+{
+	if (topP > 0) {
+		topP--;
+	}
+
+
+
+}
 
 
 
@@ -99,22 +113,29 @@ t arraystack <t> ::getElement( int index) {
 
 
 }
-//
-//template <class t>
-//bool arraystack <t> ::remove(int index) {
-//
-//	if (index < [0]) {
-//
-//		return false;
-//	}
-//
-//	else {
-//		delete target data;
-//		space--;
-//	}
-//
-//
-//}
+
+template <class t>
+bool arraystack <t> ::remove(int index) {
+
+	// if index is more than or equal to zero and index is less than top posistion, if data equals then index it is on pop it out of the array
+
+	if (index >= 0 && index < topP) {
+
+		for (int i = 0; i < topP; ++i) {
+
+			if (data[i] == index) {
+	//			data[i].pop(index);
+			}
+		}
+		topP--;
+		return true;
+
+
+	}
+
+	return false;
+
+}
 
 template <class t>
 int arraystack <t> ::search(const t& target) {

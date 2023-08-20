@@ -1,5 +1,6 @@
 #include "Stackedarray.h"
 #include "Q3CSV.h"
+#include "Q2Myset.h"
 
 #include <iostream>
 #include <string>
@@ -38,10 +39,11 @@ int main() {
 	stackinfo.push(10);
 	stackinfo.push(15);
 	stackinfo.push(25);
+	stackinfo.push(27);
 
 	int secondindex;
 	int secondelement;
-	int clearfunction;
+	/*bool clearfunction;*/
 
 	 secondindex = stackinfo.search(10);
 	 cout << secondindex << endl;
@@ -51,15 +53,28 @@ int main() {
 
 
 	int amount = stackinfo.length();
-	cout << "there is " << amount << "values in this array" << endl;
+	cout << "there is " << amount << " " << "values in this array" << endl;
 
 
-	/* stackinfo.remove(15);
-	cout << "data cleared current amount is" << amount << endl;*/
+	
+	bool clearfunction = stackinfo.remove(5);
+
+	if (clearfunction = true ){
+		cout << "data cleared current amount is" << "   " << amount << endl;
+	}
+
+	else {
+		cout << "Invalid index or element not found." << endl;
+	}
+
+	amount = stackinfo.length();
+	cout << "there is " << amount << " " << "values in this array after the remove " << endl;
+
+
 
 	stackinfo.~arraystack();
 
-	cout << "data cleared current amount is" << amount << endl;
+	cout << "data cleared current amount is" << "   " << amount << endl;
 
 
 	scaninfojohn20();
